@@ -6,7 +6,7 @@
     h2{color: purple;}
     p{color: purple;}
     p1{color: gold;},{font-family:courier;},
-    p2{color: blue;}
+    p2{color: blue;},{font-family:courier;},
     </style>
 </head>
 <body>
@@ -32,17 +32,38 @@
 <h5 style="text-align:center;" "font-size:200%;">. . .</h5>
 
 <br/>
-<p2><style="text-align: center;" "font-family:courier;" "color: blue;"><br/>--Here's a glimpse of some of my favorite things-- <br/></p2>
+<p2><br/>--Here's a glimpse of some of my favorite things-- <br/></p2>
   </br>
 
-<p>&nbsp;</p>
-<center><img src="smokey.jpeg" alt="Picture of Smokey" width="295" height="275" align="BOTTOM"></center>
 
-<left><img src="becca.jpg" alt="Hiking with Becca" width="325" height="275" align="LEFT"></left>
-  <p>&nbsp;</p>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<right><img src="laika.jpeg" alt="Picture of Laika" width="400" height="275" align="RIGHT"></right>
-  <p>&nbsp;</p>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>  
+  
+ <div class="row">
+  <div class="column">
+    <img src="smokey.jpeg" alt="Smokey" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="becca.jpg" alt="Hike with Becca" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="laika.jpeg" alt="Laika" style="width:100%">
+  </div>                                                                                      
 
 </body>
 
